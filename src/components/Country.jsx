@@ -1,5 +1,5 @@
 
-
+import PropTypes from 'prop-types';
 const Country = ({ country }) => {
     const { flags, name } = country
 
@@ -15,5 +15,8 @@ const Country = ({ country }) => {
         </div>
     );
 };
+Country.propTypes = {
+    country:PropTypes.object,
+}
 
 export default Country;
